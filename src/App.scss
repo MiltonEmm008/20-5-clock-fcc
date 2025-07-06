@@ -4,11 +4,86 @@ body {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
+  text-align: center;
+  
+  header {
+    margin-bottom: 30px;
+    
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    h3 {
+      font-size: 1.2rem;
+      color: #7f8c8d;
+      font-weight: 400;
+    }
+  }
+  
+  main {
+    margin-bottom: 30px;
+  }
+  
+  span {
+    p {
+      color: #7f8c8d;
+      font-size: 0.9rem;
+      
+      a {
+        color: #3498db;
+        text-decoration: none;
+        font-weight: 600;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    header {
+      margin-bottom: 25px;
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      h3 {
+        font-size: 1rem;
+      }
+    }
+    
+    main {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    header {
+      margin-bottom: 20px;
+      
+      h1 {
+        font-size: 1.8rem;
+      }
+      
+      h3 {
+        font-size: 0.9rem;
+      }
+    }
+    
+    main {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .clock-controls {

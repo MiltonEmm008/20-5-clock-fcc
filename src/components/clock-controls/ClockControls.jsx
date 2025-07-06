@@ -7,6 +7,7 @@ import {
   AiOutlineArrowDown,
   AiOutlineArrowUp,
 } from "react-icons/ai";
+import './ClockControls.scss';
 
 function ClockControls() {
   const {

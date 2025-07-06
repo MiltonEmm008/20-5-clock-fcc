@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { TimeContext } from "../../context/TimeContext";
 import alarm from '../../assets/alarm.mp3'
+import './Clock.scss';
 
 function Clock() {
   const { currentTime, isBreakTime } = useContext(TimeContext);
