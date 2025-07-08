@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/20-5-clock-fcc/sw.js', { scope: '/20-5-clock-fcc/' })})}
